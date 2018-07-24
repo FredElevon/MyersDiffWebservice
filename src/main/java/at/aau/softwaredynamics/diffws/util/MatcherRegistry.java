@@ -1,5 +1,6 @@
 package at.aau.softwaredynamics.diffws.util;
 
+import at.aau.softwaredynamics.diffws.DiffMatchPatch;
 import at.aau.softwaredynamics.diffws.MyersDiff;
 import at.aau.softwaredynamics.diffws.domain.Differ;
 
@@ -14,6 +15,7 @@ public class MatcherRegistry {
         // TODO (Thomas): init from config
         // TODO Insert differs here
         matcherMap.put(1, MyersDiff.class);
+        matcherMap.put(2, DiffMatchPatch.class);
 //        matcherMap.put(2, OptimizedVersions.MtDiff.class);
 //        matcherMap.put(3, JavaMatchers.IterativeJavaMatcher.class);
 //        matcherMap.put(4, JavaMatchers.IterativeJavaMatcher_V1.class);

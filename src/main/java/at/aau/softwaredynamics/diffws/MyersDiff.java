@@ -46,7 +46,7 @@ public class MyersDiff extends Differ {
         try (Stream<String> lines = Files.lines(path)) {
             lines.forEach(liste::add);
         }  catch (IOException ex) {
-            System.out.println("Cannot Read File!" + fileName);
+            System.out.println("Can not Read File: " + fileName);
         }
         return liste;
     }
